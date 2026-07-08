@@ -1,0 +1,5 @@
+PyJWT==2.10.1
+pytest==8.4.1
+pytest-cov==6.2.1
+flake8==7.3.0
+bandit==1.8.6
