@@ -29,13 +29,10 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Flake8
-        run: |
-          flake8 src
+        run: flake8 src tests
 
       - name: Run Bandit
-        run: |
-          bandit -r src
+        run: bandit -r src
 
       - name: Run Pytest with Coverage
-        run: |
-          pytest --cov=src --cov-fail-under=85
+        run: pytest --cov=src --cov-fail-under=85
