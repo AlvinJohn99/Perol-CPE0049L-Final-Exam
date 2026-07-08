@@ -1,8 +1,8 @@
 import datetime
 import jwt
+import os
 
-
-SECRET_KEY = "my_secret_key"
+SECRET_KEY = os.getenv("SECRET_KEY", "development_secret")
 
 
 class AuthService:
